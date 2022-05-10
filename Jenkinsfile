@@ -9,6 +9,11 @@ pipeline {
         }
     }
     stages {
+	stage('Node-Version') {
+            steps {
+                sh 'npm version'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'npm install react-scripts --save'
