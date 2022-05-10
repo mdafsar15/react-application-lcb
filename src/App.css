@@ -1,0 +1,199 @@
+.app {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 10%;
+  height: 170%;
+}
+
+.title{
+padding-top: 30px;
+padding-bottom: 15px;
+}
+
+a {
+  color: black;
+  font-size: 24px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+}
+
+a:hover {
+   color:#1693c6
+}
+
+.linkTag{
+  text-align: center;
+
+}
+.login-form h1{
+text-align: left;
+color: #120909 !important;
+font-size: 2.0em !important;
+font-weight: 500 !important;
+font-family: 'Open Sans', sans-serif !important;
+/* position: absolute; */
+/* top: 7%; */
+/* left: 11%; */
+margin: 9% 0;
+margin-bottom: 9%;
+}
+
+form li{
+  border: 1px solid #6d6e7c;
+  list-style: none;
+  margin-bottom: 16px;
+  width: 100%;
+  background: #fafafb;
+  border-radius: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  /* height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #28282d;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8em; */
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #180d0d;
+  font-size: 17px;
+  outline: none;
+  background: none;
+  border: none;
+  /* font-size: 12px; */
+}
+
+label{
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  /* margin-top: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  background: #1693c6;
+  border: 1px solid #1693c6;
+  color: black;
+  padding: 10px 20px; */
+  /* float: centre; */
+    /* font-size: 18px;
+    display: inline-block;
+    font-weight: 600;
+    color: #353535;
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -o-transition: 0.1s all;
+    cursor: pointer;
+    outline: none;
+    padding: 15px 10px;
+    margin-top: 5%;
+    background: rgb(106, 105, 105);
+    width: 45%;
+    border: 1px solid rgb(106, 105, 105)2; */
+    font-family: 'Open Sans', sans-serif;
+    padding: 3% 17%;
+    background-image: linear-gradient(to right, #7284fa , #65e1ed);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: 550;
+    color: #fff;
+    letter-spacing: .5;
+    border: 1px solid #b6b3b3;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* input[type="submit"]:hover {
+  background: #6d6e7c;
+} */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3%;
+  padding-top: 5%;
+  /* color:blue */
+}
+
+.login-body {
+  font-family: sans-serif;
+  display: flex;
+  opacity:0.9;
+  align-items: center;
+  flex-direction: column;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  min-height:100vh;
+  background-image: url(f.jpg);
+  background-size: cover;
+  background-position: center center;
+  /* color: #424244; */
+}
+
+/* body{
+  background-image: url(pic.jpg);
+  background-size: cover;
+  background-position: center center;
+} */
+
+
+.login-form{
+  position: relative;
+  /* background-color: #424244; */
+  /* height:460px; */
+  width:30%;
+  margin: auto;
+  /* opacity: 0.8; */
+  padding: 0 2em;
+  border-radius: 38px;
+  /* box-shadow:0px 2px 8px rgb(0 0 0 / 40%); */
+  /* background: linear-gradient(180deg, rgb(69, 90, 135) 0%, rgb(41, 144, 184) 52%, rgba(87, 86, 86, 0) 82%); */
+  /* background:linear-gradient(180deg, rgba(160,197,233,1) 19%, rgba(72,129,186,0.9514180672268907) 47%, rgba(201,211,230,1) 100%); */
+  color:#fff;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* background-image: url(bgf.png); */
+}
+
+
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+
+/* .icon{padding-left: 25px;
+  background-image: url("userIcon.png") no-repeat left;
+  background-size: 20px;} */
+  /* input[type='text'] {background-image: url("a.jpeg") no-repeat left;
+    background-position: 7px 7px;
+    background-repeat: no-repeat;} */
+    
+.account-row{text-align: center; margin: 0px 0px 9% 0px;}
+.account-row p a{font-size: 16px;color: #706969;font-family: 'Open Sans', sans-serif !important;text-decoration: none;}
+.account-row p a:hover{text-decoration: underline;}

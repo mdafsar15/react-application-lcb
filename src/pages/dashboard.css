@@ -1,0 +1,102 @@
+/* .main-header{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 3%;
+} */
+
+
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+  color: #fff !important;
+  border-bottom: 2.4px solid #fbfbfb !important;
+}
+
+h5{
+  display: inline-block;
+  vertical-align:baseline;
+}
+.navbar{
+  justify-content: left;
+  align-items: end;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+}
+
+.Image-logo{
+  width: 100px;
+}
+.header-row{margin-left: 5%;}
+
+.dropdown-item{padding: 0.15rem 1rem !important; font-size: 17px !important;}
+
+.ab-all{
+padding-top: 2% !important;
+}
+
+.dropdown-toggle{
+  background-color: white !important;
+  border: none !important;
+  color: black !important;
+  box-shadow: none !important;
+}
+
+.dropdown-toggle::after{
+  margin-left: 0.955em !important;
+
+}
+
+/*  */
+.btn{
+  padding-top: 0.375rem !important;
+    padding-right: 1.75rem !important;
+    padding-bottom: 0.395rem !important;
+    padding-left: 1.75rem !important;
+}
+.btn-focus{
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.advance-banner-bg{
+  padding-top: 11.4px;
+  padding-right: 11.4px;
+  padding-bottom: 5.4px;
+  padding-left: 11.4px;
+
+}
+
+strong{
+  font-weight: 600 !important;
+}
+
+.page-center{
+    padding-top: 50px;
+    padding-right: 12px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.settlemint{
+  /* width: 1080px; */
+  max-width: 100%;
+    height: auto;
+}
+
+h1{
+  color: #004 !important;
+    /* font-family: Poppins !important; */
+    font-size: 55px !important;
+    font-weight: 400 !important;
+}
+
+h2{
+  padding-top: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vw;
+    /* padding-left: 1vw; */
+  color: #004 !important;
+    /* font-family: Poppins !important; */
+    font-size: 32px !important;
+    font-weight: 400 !important;
+}
