@@ -1,4 +1,7 @@
 pipeline {
+    tools {
+        nodejs 'node_18'
+    }
     agent {
         docker {
             image 'node:lts-bullseye-slim'
@@ -8,8 +11,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install'
-                sh 'npm run build'
+                sh 'npm install react-scripts --save'
+                
             }
         }
 
