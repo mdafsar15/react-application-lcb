@@ -1,13 +1,11 @@
 pipeline {
+
+    agent any
+
     tools {
         nodejs 'node_18'
     }
-    agent {
-        docker {
-            image 'node:lts-bullseye-slim'
-            args '-p 3000:3000'
-        }
-    }
+    
     stages {
 	stage('Node-Version') {
             steps {
