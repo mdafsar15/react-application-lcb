@@ -8,7 +8,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install react-scripts --save'
+                sh "rm -rf node_modules || true" // removing node_modules if existing.
+                sh 'npm install'
+                sh 'npm run build'
             }
         }
 
