@@ -5,24 +5,45 @@ pipeline {
     tools {
         nodejs 'node_18'
     }
+    environment {
+        imageName = "react"
+        registryCredentials = "nexus"
+        registry = "192.168.0.69:8085/"
+        dockerImage = ''
+    }
     
     stages {
-	stage('Node-Version') {
+
+	stage('checkout') {
             steps {
-                sh 'npm version'
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/mdafsar15/react-application-lcb.git']]])
             }
         }
+	
         stage('Build') {
             steps {
-                sh 'npm install react-scripts --save'
+                sh 'npm install'
                 
             }
         }
 
-	stage('Run') {
+	stage ('Build image') {
             steps {
-                sh 'npm start'
+                script {
+                    dockerImage = docker.build imageName
+                }
             }
         }
+
+
+	stage('Uploading to Nexus') {
+            steps{  
+                script {
+                    docker.withRegistry( 'http://'+registry, registryCredentials ) {
+                    dockerImage.push('latest')
+          }
+        }
+      }
+    }
     }
 }
